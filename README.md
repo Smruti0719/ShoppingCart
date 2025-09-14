@@ -1,63 +1,55 @@
-# ShoppingCart
-A modern and responsive shopping application built with React.js
-
 # React Shopping Cart App
 
-A simple shopping cart application built with React.js for learning purposes.
+A modern e-commerce shopping cart application built with ReactJS.
 
-📁 Components File Structuresrc/ :
-├── components/
-│   ├── ProductList.js      # Shows grid of all products
-│   ├── ProductCard.js      # Individual product display
-│   ├── ShoppingCart.js     # Cart page with all items
-│   └── CartItem.js         # Individual cart item
-├── context/
-│   └── CartContext.js      # Global state management
-├── data/
-│   └── products.js         # Product data
-├── styles/
-│   ├── App.css            # Main app styles
-│   ├── Product.css        # Product component styles
-│   └── ShoppingCart.css   # Cart component styles
-└── App.js                 # Root component
+## Features
 
+- Browse products in a responsive grid layout
+- Add products to cart with quantity management
+- Real-time cart updates and total calculation
+- Remove items or update quantities in cart
+- Clean navigation between product list and cart views
+- Responsive design for desktop and mobile
 
-## 📋 Features
+## Technologies Used
 
-- Browse products with images and prices
-- Add items to cart
-- Update quantities and remove items
-- Real-time total calculation
-- Responsive design
+- ReactJS (Hooks - useState)
+- CSS3 for styling
+- JavaScript ES6+
 
-## 🛠️ Technologies Used
+## How to Run
 
-- React.js
-- JavaScript (ES6+)
-- CSS3
-- Context API for state management
-
-## 🚀 How to Run
-
-1.  cd react-shopping-cart - Clone the repository 
-
-2. npm install -Install dependencies 
-
-3. npm start - Start the app
-
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm start`
 4. Open http://localhost:3000 in your browser
 
-## 📁 Project Structure
+## Project Structure
+src/
+├── components/
+│ ├── ProductList.js # Product grid display
+│ ├── ProductCard.js # Individual product cards
+│ ├── ShoppingCart.js # Cart view component
+│ └── CartItem.js # Individual cart items
+├── data/
+│ └── products.js # Product data
+├── App.js # Main application component
+|-styles
+  ├── App.css # Application styling
+└── index.js # React entry point
+
+## Functionality
+
+- **Add to Cart**: Click "Add to Cart" to add products
+- **View Cart**: Use navigation to switch to cart view
+- **Update Quantity**: Change item quantities in cart
+- **Remove Items**: Remove unwanted items from cart
+- **Total Calculation**: Automatic price calculation
+- **Checkout**: Simple checkout simulation
 
 
-## 🎯 What I Learned
 
-- React components and JSX
-- State management with Context API
-- Event handling and props
-- CSS styling and responsive design
+## Author
 
-
-
-
-
+Smruti Sagarika Nayak
+smrutisagarika0719@gmail.com
