@@ -1,13 +1,7 @@
 import React from 'react';
 import CartItem from './CartItem';
-import { useCart } from '../context/CartContext';
-import '../styles/ShoppingCart.css';
 
-
-const ShoppingCart = () => {
-  
-  const { cartItems, getCartTotal } = useCart();
-
+const ShoppingCart = ({ cartItems, removeFromCart, updateQuantity, getCartTotal }) => {
   
   if (cartItems.length === 0) {
     return (
@@ -25,7 +19,12 @@ const ShoppingCart = () => {
       {}
       <div className="cart-items">
         {cartItems.map(item => (
-          <CartItem key={item.id} item={item} />
+          <CartItem 
+            key={item.id} 
+            item={item} 
+            removeFromCart={removeFromCart}
+            updateQuantity={updateQuantity}
+          />
         ))}
       </div>
 
